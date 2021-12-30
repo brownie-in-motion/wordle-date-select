@@ -1,0 +1,25 @@
+{
+  "name": "Wordle Date Select",
+  "short_name": "WDS",
+  "version": "1.0",
+  "description": "Provides a date selection dialog for Wordle",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.powerlanguage.co.uk/wordle/"],
+      "run_at": "document_start",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Date Select",
+    "default_popup": "index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["pageScript.js"],
+      "matches": ["https://www.powerlanguage.co.uk/*"]
+    }
+  ]
+}
