@@ -1,7 +1,8 @@
 # Wordle Date Select
 
 An extension that lets the user choose the current date for
-[Wordle](https://www.powerlanguage.co.uk/wordle/).
+[Wordle](https://www.powerlanguage.co.uk/wordle/). For some reason, this
+only works consistently when devtools is open.
 
 # Notes
 
